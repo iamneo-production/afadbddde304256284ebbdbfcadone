@@ -68,7 +68,7 @@
       <artifactId>selenium-java</artifactId>
       <version>4.7.2</version>
     </dependency>
-  </dependencies>
+
 <dependency>
 			<!-- jsoup HTML parser library @ https://jsoup.org/ -->
 			<groupId>org.jsoup</groupId>
@@ -91,6 +91,7 @@
 			<artifactId>freemarker</artifactId>
 			<version>2.3.30</version>
 		</dependency>
+      </dependencies>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to
       parent pom) -->

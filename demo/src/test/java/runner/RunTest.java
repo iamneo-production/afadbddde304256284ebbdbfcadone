@@ -13,10 +13,9 @@ import cucumber.api.junit.Cucumber;
 				glue = "glue",
 				plugin = {
 					"pretty", 
-					"json:Cucumber-Reports/CucumberReport.json",
-					"rerun:Cucumber-Reports/rerun.txt",
+		
 					"html:Cucumber-Reports/CucumberReport.html", 
-					"junit:junit_xml/CucumberReport.xml"
+					
 					
 					})
 public class RunTest {
