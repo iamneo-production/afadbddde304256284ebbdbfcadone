@@ -19,6 +19,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.Scenario;
 import pages.Homepage;
 import runner.Base;
 import utils.LoggerHandler;
@@ -99,7 +100,13 @@ public class GilletteTests {
         String articlesListText = articlesList.getText();
     }
 
-    @After
+    @After(order=1)
+    public void takeScreenshot(Scenario scenario){
+if(scenario.isFailed()){
+    
+}
+    }
+    @After(order=0)
     public void tearDown() {
         if (driver != null) {
             driver.quit();
