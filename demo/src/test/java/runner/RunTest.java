@@ -12,7 +12,16 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(features="src/test/resources/features",
 
-                glue = "glue")
+                glue = "glue",plugin = {
+                    "pretty", 
+                    "json:Cucumber-Reports/CucumberReport.json",
+                    "rerun:Cucumber-Reports/rerun.txt",
+                    "html:Cucumber-Reports/CucumberReport.html", 
+                    "junit:junit_xml/CucumberReport.xml",
+                   
+                    }, 
+                    monochrome = true, 
+                    dryRun = false)
 
 public class RunTest {
 
