@@ -16,8 +16,8 @@ import cucumber.api.junit.Cucumber;
 					"json:Cucumber-Reports/CucumberReport.json",
 					"rerun:Cucumber-Reports/rerun.txt",
 					"html:Cucumber-Reports/CucumberReport.html", 
-					"junit:junit_xml/CucumberReport.xml",
-					"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" 
+					"junit:junit_xml/CucumberReport.xml"
+					
 					})
 public class RunTest {
 }

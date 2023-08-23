@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="21.989211">
+    <testcase classname="Gillette Website Tests" name="Verify the search functionality" time="9.664291">
+        <system-out>
+            <![CDATA[Given I am on the Gillette website..........................................passed
+When I search for "Razor" using the search option...........................passed
+Then I should see "Results For Razor'" at the top of the search results.....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Gillette Website Tests" name="Verify the display of Gillette MACH3 Turbo under products list" time="6.554046">
+        <system-out>
+            <![CDATA[Given I am on the Gillette website..........................................passed
+When I hover on from the top navigation.....................................passed
+And I choose "MACH3" under "By Brands" from the drop-down...................passed
+Then I should see "Gillette MACH3 Turbo" under the products list............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Gillette Website Tests" name="Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" time="5.770874">
+        <system-out>
+            <![CDATA[Given I am on the Gillette website..........................................passed
+When I click on "Styling" under "Learn" in the footer.......................passed
+Then I should see "Facial Hair Styles: The Anchor Beard" under the list of articles under styling.passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
